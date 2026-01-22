@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TYPE BEFIT GYM</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4rem;
+      letter-spacing: 3px;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px;
+      border: 2px solid #e10600;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e10600;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    /* ABOUT */
+    .about p {
+      max-width: 800px;
+      line-height: 1.8;
+      opacity: 0.9;
+    }
+
+    /* PROGRAMS */
+    .programs,
+    .trainers,
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card,
+    .trainer {
+      background: #141414;
+      padding: 30px;
+      border-left: 4px solid #e10600;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* PRICING */
+    .price-card {
+      border: 2px solid #222;
+      padding: 30px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .price-card:hover {
+      border-color: #e10600;
+    }
+
+    /* CONTACT */
+    form {
+      max-width: 500px;
+      margin-top: 30px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      background: #1a1a1a;
+      border: none;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #050505;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>TYPE BEFIT GYM</h1>
+      <p>Transform Your Body. Elevate Your Mind.</p>
+      <a href="#contact" class="btn">Join Now</a>
+      <a href="#programs" class="btn">Free Trial</a>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      TYPE BEFIT GYM is built for those who believe fitness is not a hobby — it’s a lifestyle.
+      We focus on discipline, strength, and consistency to help you become the strongest version of yourself.
+    </p>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs">
+    <h2>Training Programs</h2>
+    <div class="programs">
+      <div class="card">Strength & Power Training</div>
+      <div class="card">Fat Loss & Conditioning</div>
+      <div class="card">Muscle Building</div>
+      <div class="card">Functional Fitness</div>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section>
+    <h2>Expert Trainers</h2>
+    <div class="trainers">
+      <div class="trainer">Alex – Strength Coach</div>
+      <div class="trainer">Ryan – Fat Loss Specialist</div>
+      <div class="trainer">Maya – Functional Trainer</div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section>
+    <h2>Membership Plans</h2>
+    <div class="pricing">
+      <div class="price-card">Basic<br><strong>₹999 / month</strong></div>
+      <div class="price-card">Pro<br><strong>₹1499 / month</strong></div>
+      <div class="price-card">Elite<br><strong>₹1999 / month</strong></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Start Your Journey</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2026 TYPE BEFIT GYM. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
